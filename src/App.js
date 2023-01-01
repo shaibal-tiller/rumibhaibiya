@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2022-12-31") - +new Date();
+    const difference = +new Date("2023-01-31") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -31,7 +31,7 @@ function App() {
       {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
         <div>
           <p className="text-white text-xs">"আর কতকাল একা থাকবে রুমি ভাই" পরিষদ</p>
-          <h1 className="text-red-500">আর বাকি</h1>
+          <h1 className="text-red-500"><span className="text-5xl text-red-800">( টাইম বাড়ছে )</span>আর বাকি</h1>
           <hr />
           <br />
           <p className="text-red-500 bg-black">
@@ -48,7 +48,13 @@ function App() {
           <hr />
         </div>
       ) : (
-        <p>Time is up 🔥</p>
+        <div className="text-red-600">
+          <p> Time is up 🔥</p>
+          <br/>
+          <hr />
+          <br/>
+          <h2 className="text-5xl" >আর চান্স নাই </h2>
+        </div>
       )}
     </div>
   );
