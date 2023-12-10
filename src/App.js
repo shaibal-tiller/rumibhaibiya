@@ -31,7 +31,7 @@ function App() {
       {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
         <div>
           <p className="text-white text-xs">"আর কতকাল একা থাকবে রুমি ভাই" পরিষদ</p>
-          <h1 className="text-red-500"><span className="text-5xl text-red-800">( টাইম বাড়ছে )</span>আর বাকি</h1>
+          <h1 className="text-red-500"><span className="text-5xl text-red-800">(এইবার খোদার কসম)</span>আর বাকি</h1>
           <hr />
           <br />
           <p className="text-red-500 bg-black">
