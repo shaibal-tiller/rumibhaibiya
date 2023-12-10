@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2023-11-15") - +new Date();
+    const difference = +new Date("2023-12-14") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
